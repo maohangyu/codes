@@ -154,6 +154,7 @@ Next, execute the following script to tokenize the corpus:
 ```
 python -u tokenize_pt_corpus.py
 ```
+See the corpus samples in [pre_train_corpus_example.md](https://github.com/maohangyu/codes/blob/main/pre_train_corpus_example.md), you will understand three core functions (i.e., process_sql_corpus, process_text2code, process_text2text) in tokenize_pt_corpus.py
 
 Lastly, the `pre_train.sh` file contains exmaple commands for launching the pre-training process. You simply need to adjust the `per_device_train_batch_size` and configure the Accelerate settings to suit your hardware environment. This step is essential to achieve a global batch size that includes exactly 4,194,304 tokens.
 
